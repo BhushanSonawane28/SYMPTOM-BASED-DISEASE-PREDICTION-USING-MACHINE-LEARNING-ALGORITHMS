@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Prediction Using Machine Learning</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .border {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            animation: round 1s ease-in-out forwards;
+        }
+
+        .header {
+            background-color: transparent;
+            padding: 10px;
+        }
+
+        .word {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .textbox {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 300px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .bottom {
+            color: #555;
+            text-align: center;
+        }
+
+        .bottom a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        .bottom a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes round {
+            0% {
+                border-radius: 50%;
+                opacity: 0;
+            }
+            100% {
+                border-radius: 10px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="word" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">Disease Prediction Using Machine Learning</h1>
+    <div align="center">
+        <div class="border">
+            <div class="header">
+                <h5 id="dynamic-heading" class="word" style="color: black;">Please Enter Your Login Credentials</h5>
+            </div>
+            <h2 class="word">
+                <form action="{{ url_for('login') }}" method="post">
+                    <div class="msg">{{ msg }}</div>
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/><br/><br/>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/><br/><br/><br/>
+                    <input type="submit" class="btn" value="Sign In"/><br/><br/>
+                </form>
+            </h2>
+            <p class="bottom">Don't have an account? <a class="bottom" href="{{url_for('register')}}">Sign Up here</a></p>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', function () {
+            var heading = document.getElementById('dynamic-heading');
+            var colors = ['#ff0000', '#00ff00', '#0000ff'];
+            var index = 0;
+            setInterval(function () {
+                heading.style.color = colors[index];
+                index = (index + 1) % colors.length;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

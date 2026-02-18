@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+      DISEASE PREDICTION
+  </title>
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+     <h1 class="main-heading" style="font-size: 40px; text-align: center; background-color: #f44336; color: white; padding: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">DISEASE PREDICTION USING MACHINE LEARNING</h1>
+
+
+      <body style="background-image: url('https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202001/MIT-Diagnostic-Performance_0.jpg?itok=3PhpCCep'); background-repeat: no-repeat; background-size: cover;">
+
+
+
+      <h1 style="color:Black" align "center" >
+          Hi {{session.username}}!!    Welcome ..
+
+     </h2>
+<div align="center">
+	 <div align="center" class="border">
+	 <div class="header">
+	 <h2 class="word"> Enter Symptoms</h2>
+	 </div></br></br>
+	 <h2 class="word">
+    <form action="{{ url_for('process') }}" method="GET">
+    <label>symtoms1: </label>
+        <input list="symtoms1" name = "symtoms1" class="textbox"/></br></br>
+        <datalist id="symtoms1" name = "symtoms1">
+
+	 {%for i in range(0, len)%}
+			<option value ="{{symtoms[i]}}"/>
+		{%endfor%}
+        </datalist>
+		<br>
+		 <label>symtom2:</label>
+		 <input list="symtoms1" name = "symtoms2" class="textbox"/></br></br>
+        <datalist id="symtoms1" name = "symtoms2">
+
+		{%for i in range(0, len)%}
+
+			<option value ="{{symtoms[i]}}"/>
+		{%endfor%}
+
+        </datalist>
+		 <label>symtom3:</label>
+		 <input list="symtoms1" name = "symtoms3" class="textbox"/></br></br>
+        <datalist id="symtoms1" name = "symtoms3">
+
+		{%for i in range(0, len)%}
+
+			<option value ="{{symtoms[i]}}"/>
+		{%endfor%}
+
+        </datalist>
+		 <label>symtom4:</label>
+		 <input list="symtoms1" name = "symtoms4" class="textbox"/></br></br>
+        <datalist id="symtoms1" name = "symtoms4">
+
+		{%for i in range(0, len)%}
+
+			<option value ="{{symtoms[i]}}"/>
+		{%endfor%}
+
+        </datalist>
+		 <label>symtom5:</label>
+		 <input list="symtoms1" name = "symtoms5" class="textbox"/></br></br>
+        <datalist id="symtoms1" name = "symtoms5">
+
+		{%for i in range(0, len)%}
+
+			<option value ="{{symtoms[i]}}"/>
+		{%endfor%}
+
+        </datalist>
+
+	<!--<button type="submit" name="submit" value="decisiontree">DecisionTree</button>
+	<button type="submit" name="submit" value="randomforest">randomforest</button>
+	<button type="submit" name="submit" value="naivebayes">NaiveBayes</button>-->
+	<button type="submit" name="submit" value="all">Check</button>
+    </form>
+	</h2>
+	</div>
+	</div>
+
+</body>
+
+</html>
