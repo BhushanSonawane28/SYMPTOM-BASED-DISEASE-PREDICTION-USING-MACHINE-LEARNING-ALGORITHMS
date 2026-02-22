@@ -1,0 +1,17 @@
+UserName,Symptom1,Symptom2,Symptom3,Symptom4,Symptom5,Prediction
+Sohel Shaikh,back_pain,constipation,abdominal_pain,diarrhoea,mild_fever,Typhoid
+Sohel Shaikh,back_pain,constipation,abdominal_pain,diarrhoea,mild_fever,Typhoid
+Sohel Shaikh,back_pain,constipation,mild_fever,yellowing_of_eyes,acute_liver_failure,Chronic cholestasis
+Sohel Shaikh,back_pain,constipation,abdominal_pain,diarrhoea,mild_fever,Typhoid
+Sohel Shaikh,back_pain,constipation,abdominal_pain,diarrhoea,mild_fever,Typhoid
+Sohel Shaikh,blackheads,constipation,mild_fever,acute_liver_failure,fluid_overload,Typhoid
+Sohel Shaikh,belly_pain,scurring,silver_like_dusting,yellow_crust_ooze,small_dents_in_nails,Typhoid
+Sohel Shaikh,belly_pain,scurring,silver_like_dusting,yellow_crust_ooze,small_dents_in_nails,Typhoid
+Sohel Shaikh,back_pain,yellow_urine,mild_fever,abdominal_pain,fluid_overload,Jaundice
+Sohel Shaikh,back_pain,fluid_overload,yellowing_of_eyes,diarrhoea,constipation,hepatitis A
+Sohel Shaikh,,,,,,Drug Reaction
+Sohel Shaikh,back_pain,diarrhoea,constipation,yellowing_of_eyes,swelled_lymph_nodes,Typhoid
+Sohel Shaikh,,,,,,Typhoid
+sejal,back_pain,malaise,yellowing_of_eyes,throat_irritation,mild_fever,Dengue
+raju hirani,muscle_weakness,redness_of_eyes,abdominal_pain,loss_of_balance,inflammatory_nails,Jaundice
+TANURAJ,back_pain,fluid_overload,mild_fever,bruising,blister,Impetigo

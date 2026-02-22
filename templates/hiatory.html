@@ -1,0 +1,59 @@
+<html>
+	<head>
+		 <style>
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+	</head>
+	<body>
+	<div class="topnav">
+  <a href="logout">SignOut </a>
+  <a class="active" href="#">History </a>
+  <a   href="list">Prediction</a>
+</div>
+		<table id="demo" border="1px" align ="center" width = "100%">
+		  <!-- HEADER ROW -->
+		  <tr>
+			{% for col in header %}
+			<th>{{ col }}</th>
+			{% endfor %}
+		  </tr>
+
+		  <!-- DATA ROWS -->
+		  {% for row in rows %}
+		  <tr>
+			{% for col in row %}
+			<td>{{ col }}</td>
+			{% endfor %}
+		  </tr>
+		  {% endfor %}
+		</table>
+	</body>
+</html>
